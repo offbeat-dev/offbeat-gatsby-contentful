@@ -37,5 +37,13 @@ module.exports = {
         icon: "src/favicon.png",
       },
     },
+    {
+      resolve: `gatsby-plugin-gatsby-cloud`,
+      options: {
+        headers: {
+          "/*": ["Referrer-Policy: origin-when-cross-origin"],
+        },
+      },
+    },
   ],
 }
